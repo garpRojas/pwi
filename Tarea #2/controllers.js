@@ -2,40 +2,25 @@ angular.module('bootstrap.controllers', [])
 
 .controller('HomeController', ['$scope', function($scope){
     
+    var ref = new Firebase("https://tarea2garp.firebaseio.com/#-Jzmtt2j2qkOSR8RTh0H|dcb1882fdb9e2231e0c828d77d8b6a34/products");  
+    /*var fb = $firebase(ref);*/
+    
     $scope.title = "Hola Mundo";
     
-    var ref = new Firebase("https://tarea2garp.firebaseIO.com/products");
+/*    $scope.promotions = [ref];*/
 
-    ref.on("child_added", function(snapshot) {
-        var nameProduct = snapshot.name;
-        var priceProduct = snapshot.price;
-        
-        console.log(snapshot.name);
-        console.log(priceProduct);
-    });
     
-    /*$scope.promotions = ref;
+   /* $scope.title = "Hola Mundo";
     $scope.promotions = [    
         {name:'Coca Cola', price:'$2'},
         {name:'Pepsi', price:'$3'},
         {name:'Redbull', price:'$4'}
     ];
     console.log(" "+$scope.promotions.length);*/
-    
-    
-    
     $scope.add = function(){
         
         var newpromotion = angular.copy($scope.newpromotion);
-        /*$scope.promotions.push(newpromotion);*/
-        
-        var idProducto = "00"+usersRef.length();
-        usersRef.set({
-            idProducto: {
-                name: newpromotion.name,
-                price: newpromotion.price
-            }
-        });
+        $scope.promotions.push(newpromotion);
     };
 }])
 

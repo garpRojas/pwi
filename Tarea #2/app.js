@@ -1,4 +1,4 @@
-angular.module('bootstrap', ['ngRoute', 'bootstrap.controllers'])
+angular.module('bootstrap', ['ngRoute', 'bootstrap.controllers',])
 
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider
