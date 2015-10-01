@@ -1,0 +1,21 @@
+angular.module('polymer.controllers', [])
+
+.controller('HomeController', ['$scope', function($scope){
+    
+    $scope.title = "Hola Mundo";
+    $scope.promotions = [    
+        {name:'Coca Cola', price:'$2'},
+        {name:'Pepsi', price:'$3'},
+        {name:'Redbull', price:'$4'}
+    ];
+    console.log(" "+$scope.promotions.length);
+    $scope.add = function(){
+        
+        var newpromotion = angular.copy($scope.newpromotion);
+        $scope.promotions.push(newpromotion);
+    };
+}])
+
+.controller('ProductsController', [function(){
+
+}]);
