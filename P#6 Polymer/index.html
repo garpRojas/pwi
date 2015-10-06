@@ -6,10 +6,16 @@
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.4/angular-route.min.js"></script>
 	<script type="text/javascript" src="app.js"></script>
 	<script type="text/javascript" src="controllers.js"></script>
+	
+	<script type=text/javascript src="bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
+	
+	<link rel="import" href="bower_components/google-castable-video/google-castable-video.html">
 </head>
-<body ng-app="bootstrap">
+<body ng-app="polymer">
 	<a href="#/">Home</a>
+	<a href="#/videos">Videos</a>
 	<a href="#/products">Products</a>
+	
 	<div ng-view>
 		<!-- View display -->
 	</div>

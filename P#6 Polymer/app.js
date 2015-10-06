@@ -11,6 +11,10 @@ angular.module('polymer', ['ngRoute', 'polymer.controllers'])
 	    templateUrl: 'views/products.html',
         controller: 'ProductsController'
 	})
+    .when('/videos', {
+	    templateUrl: 'views/videos.html',
+        controller: 'VideosController'
+	})
 	.otherwise({
 	  	redirectTo: '/'
 	});
