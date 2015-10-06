@@ -1,0 +1,28 @@
+{
+  "name": "P#8 Polymer Custome Controls",
+  "version": "0.1.0",
+  "description": "test controls",
+  "main": "app.js",
+  "moduleType": [],
+  "keywords": [
+    "polymer",
+    "demo",
+    "free"
+  ],
+  "authors": [
+    "GarpRojas"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.1.0"
+  }
+}
