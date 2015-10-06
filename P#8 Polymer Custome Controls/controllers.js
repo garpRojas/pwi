@@ -1,4 +1,4 @@
-angular.module('CustomPolimer.controllers', [])
+angular.module('CustomPolymer.controllers', [])
 
 .controller('HomeController', ['$scope', function($scope){
     

@@ -1,4 +1,4 @@
-angular.module('CustomPolimer', ['ngRoute', 'CustomPolimer.controllers'])
+angular.module('CustomPolymer', ['ngRoute', 'CustomPolymer.controllers'])
 
 .config(['$routeProvider', function($routeProvider) {
 	$routeProvider
