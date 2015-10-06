@@ -4,9 +4,9 @@ angular.module('bootstrap', [])
     
     $scope.title = "Hola Mundo";
     
-/*    var ref = new Firebase("https://tarea2garp.firebaseIO.com/products");
+   var ref = new Firebase("https://tarea2garp.firebaseIO.com/products");
     
-    var pt = $firebase(ref);
+    /* var pt = $firebase(ref);
     
     var syncObject = pt.$asObject();
     

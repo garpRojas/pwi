@@ -2,21 +2,22 @@ angular.module('bootstrap.controllers', [])
 
 .controller('HomeController', ['$scope', function($scope){
     
-    var ref = new Firebase("https://tarea2garp.firebaseio.com/#-Jzmtt2j2qkOSR8RTh0H|dcb1882fdb9e2231e0c828d77d8b6a34/products");  
+    $scope.title = "Caraga de los Datos";
+    
+    var ref = new Firebase("https://tarea2garp.firebaseio.com/products");  
     /*var fb = $firebase(ref);*/
     
-    $scope.title = "Hola Mundo";
-    
-/*    $scope.promotions = [ref];*/
+    ref.on("value", function (snapshot) {
+      var changedPost = snapshot.val();
+      console.log("The updated post title is " + changedPost);
+  });
 
-    
-   /* $scope.title = "Hola Mundo";
-    $scope.promotions = [    
+   /* $scope.promotions = [    
         {name:'Coca Cola', price:'$2'},
         {name:'Pepsi', price:'$3'},
         {name:'Redbull', price:'$4'}
-    ];
-    console.log(" "+$scope.promotions.length);*/
+    ];*/
+    
     $scope.add = function(){
         
         var newpromotion = angular.copy($scope.newpromotion);
