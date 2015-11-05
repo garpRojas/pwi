@@ -1,6 +1,7 @@
 {
     "jscodehints.detectedExclusions": [
         "C:/Users/Garp/Documents/Cenfotec/Programacion web interactiva/Tarea #2/test.js",
-        "C:/Users/Garp/Documents/Cenfotec/Programacion web interactiva/P#6 Polymer/bower_components/webcomponentsjs/webcomponents.min.js"
+        "C:/Users/Garp/Documents/Cenfotec/Programacion web interactiva/P#6 Polymer/bower_components/webcomponentsjs/webcomponents.min.js",
+        "C:/Users/Garp/Documents/Cenfotec/Programacion web interactiva/P#8 Polymer Custome Controls/controllers.js"
     ]
 }
