@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Canvas game</title>
+    </head>
+    <body onload="drawCanvas()">
+        <h1>Canvas Game</h1>
+        <canvas id="gameBoard" width="300" height="300">
+            
+            Canvas not Working...&nb
+            
+            
+        </canvas>
+        
+        <script type="text/javascript">
+            //varriables
+            var ballx = 150;
+            var bally = 150;
+            var ballDX = 2;
+            var ballDY = 4;
+            var boardX = 300;
+            var boardY = 300;
+            var paddleX = 150;
+            var paddleH = 10;
+            var paddleD = boardY- paddleH;
+            var paddleW = 150;
+            var canvas;
+            var ctx;
+            var gameLoop;
+            
+            function drawCanvas(){
+                canvas = document.getElementById(gameBoard);
+                if(cancas.getContext){
+                    ctx = canvas.getContext('2d');
+                    gameloop = setInterval(drawBall, 16);
+                    window.addEventListener('keydown', controls, true);
+                    
+                };
+            };
+                
+                function drawBall(){
+                    ctx.clearRect(0, 0, boardX, boardY);
+                    
+                    
+                    ctx.fillStyle = "thisle"
+                    ctx.beginPath();
+                    ctx.rect(0,0, boardX, boardY);
+                    ctx.closePath;
+                    ctx.fill();
+                    
+                    ctx.fillStyle = "tamato"
+                    ctx.beginPath();
+                    ctx.arc(ballX, ballY, 15, 0, Math.PI * 2,true)
+                    ctx.closePath;
+                    ctx.fill();
+                    
+                    ctx.fillStyle= 'navy'
+                    ctx.beginPath();
+                    ctx.rect(paddleX, paddleD, paddleW, paddleH);
+                    
+                    
+                    ballDX += ballDX;
+                    bally += ballDY;
+                    
+                    if(ballX + ballDX > boardX - 15 || ballX + ballDX <)
+                    {
+                        ballDY = - ballow;
+                    }
+                    
+                    
+                    var sgraig bally _ velloy < 15
+                    
+                    };
+        </script>
+    </body>
+</html>
